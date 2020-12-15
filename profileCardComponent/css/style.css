@@ -1,13 +1,64 @@
+/* Cositas generales */
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* Primary colors */
+    --color-darkCyan: hsl(185, 75%, 39%);
+    --color-veryDarkDesatBlue: hsl(229, 23%, 23%);
+    --color-darkGrayishBlue: hsl(227, 10%, 46%);
+    /* Neutral color */
+    --color-darkGray: hsl(0, 0%, 59%);
 }
 
 .flex{
     display: flex;
 }
 
+/* Card-top */
+.card-top{
+    /* border: 1px solid red; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 350px;
+    height: 265px;
+    background: url('../images/bg-pattern-card.svg') center top/contain no-repeat;
+    border-bottom: 1px solid var(--color-darkGray);
+}
+
+.card-photo img{
+    border-radius: 50%;
+    border: 7px solid white;
+}
+
+.card-infoPersonal{
+    /* border: 1px solid red; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    padding: 10px 0 10px 0;
+}
+
+.card-name h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-veryDarkDesatBlue);
+}
+
+.card-age h3, .card-city h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-darkGray);
+}
+
+.card-city h3{
+    font-size: 15px;
+}
+
 .attribution {
+    margin-top: 50px;
     font-size: 11px;
     text-align: center;
 }
